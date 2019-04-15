@@ -11,6 +11,9 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload. Hej hej här är martins ändringar
           </p>
+          <p>
+            Anders ändrar här!
+          </p>
           <a
             className="App-link"
             href="https://reactjs.org"
