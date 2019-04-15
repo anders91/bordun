@@ -1,0 +1,25 @@
+.greenborder {
+    border: 1px solid green;
+    text-align: center;
+}
+
+.vilkenton{
+    text-align: center;
+    font-size: 44px;
+    height: 20vh;
+    padding-top: 10vh;
+}
+
+
+
+.uppnerknappar{
+    display: inline-block;
+    width: 49%;
+    height: 10vh;
+    padding-top: 10vh;
+}
+
+.playpauseknapp{
+    height: 18vh;
+    padding-top: 11vh;
+}
