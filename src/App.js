@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './reset.css'
 import './App.css'
+import Tongenerator from './Tongenerator';
 //import Tongenerator from './Tongenerator'
 
 export default class App extends Component {
@@ -61,8 +62,7 @@ export default class App extends Component {
 <div id="plusett" onClick={this.handleNotechange} className="greenborder uppnerknappar">Ton upp</div>
 <div id="minstolv" onClick={this.handleNotechange} className="greenborder uppnerknappar">oktav ner</div>
 <div id="plustolv" onClick={this.handleNotechange} className="greenborder uppnerknappar">oktav upp</div>
-<div onClick={this.handlePlaypause} className="greenborder playpauseknapp">Playpause</div>
-
+<Tongenerator className="greenborder playpauseknapp" />
 
       </div>
     )
