@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import './reset.css'
-import './App.css'
+import './reset.css';
+import './App.css';
 import Tongenerator from './Tongenerator';
-//import Tongenerator from './Tongenerator'
 
 export default class App extends Component {
   constructor(props) {
     super(props)
     
     this.state = {
-      notePlaying: 1,
+      notePlaying: 996,
       noteOctave: 3,
     }
+    this.noteArray = ["C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab", "A", "A#/Bb", "B"]
 
     this.handleNotechange = this.handleNotechange.bind(this);
   }
@@ -29,7 +29,7 @@ export default class App extends Component {
             notePlaying : prevState.notePlaying - 1
           }
         })
-        console.log('SWICH misuett')
+        console.log('SWICH minusett')
         break;
       case 'plusett':
         // code block
@@ -68,8 +68,7 @@ export default class App extends Component {
 
     return (
       <div>      
-<div className="greenborder vilkenton">{this.state.notePlaying}</div>
-<div className="greenborder vilkenton">{this.state.noteOctave}</div>
+<div className="greenborder vilkenton">{this.noteArray[this.state.notePlaying%12]}{this.state.noteOctave}</div>
 
 <div id="minusett" onClick={this.handleNotechange} className="greenborder uppnerknappar">Ton ner</div>
 <div id="plusett" onClick={this.handleNotechange} className="greenborder uppnerknappar">Ton upp</div>
@@ -83,5 +82,3 @@ export default class App extends Component {
     )
   }
 }
-
-

@@ -30,12 +30,12 @@ export default class Tongenerator extends Component {
   render() {
     this.synth.setNote(
       this.noteArray[
-        Number(this.props.notePlaying%11)] + 
+        this.props.notePlaying%12] + 
         this.props.noteOctave)
     return (
       <div onClick={() => this.play(
         this.noteArray[
-          Number(this.props.notePlaying)] + 
+          this.props.notePlaying%12] + 
           this.props.noteOctave)}>
         <PlayPause  />
       </div>
