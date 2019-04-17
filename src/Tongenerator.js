@@ -9,7 +9,7 @@ export default class Tongenerator extends Component {
           playing: false
         };
 
-        this.noteArray = ["c3", "c#3", "d3", "d#3", "e3", "f3", "f#3", "g3", "g#3", "a3", "a#3", "b3"]
+        this.noteArray = ["c", "c#", "d", "d#", "e", "f", "f#", "g", "g#", "a", "a#", "b"]
         this.synth = new Tone.AMSynth().toMaster();
         this.play = this.play.bind(this);
       }
@@ -28,9 +28,15 @@ export default class Tongenerator extends Component {
 
 
   render() {
-    this.synth.setNote(this.noteArray[Number(this.props.notePlaying%11)])
+    this.synth.setNote(
+      this.noteArray[
+        Number(this.props.notePlaying%11)] + 
+        this.props.noteOctave)
     return (
-      <div onClick={() => this.play(this.noteArray[Number(this.props.notePlaying)])}>
+      <div onClick={() => this.play(
+        this.noteArray[
+          Number(this.props.notePlaying)] + 
+          this.props.noteOctave)}>
         <PlayPause  />
       </div>
       ) 
