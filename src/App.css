@@ -1,5 +1,5 @@
 .greenborder {
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     text-align: center;
 }
 
@@ -22,13 +22,40 @@
 .playpauseknapp{
     height: 18vh;
     padding-top: 11vh;
+
 }
 
 #playpauseiplaypausejs{
 padding-top:5vh;
 height:20vh;
+
 }
 
 #playpauseparentdiv{
-    text-align: center; 
+    text-align: center;
+ 
 }
+
+#minusett{
+    background-color: #FF1654
+}
+
+
+
+#plusett{
+    background-color: #70C1B3
+}
+
+#minstolv{
+    background-color: #70C1B3
+}
+
+#plustolv{
+    background-color: #FF1654;
+
+}
+
+/*minusett
+plusett
+minstolv
+plustolv*/
