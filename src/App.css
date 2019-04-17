@@ -23,3 +23,12 @@
     height: 18vh;
     padding-top: 11vh;
 }
+
+#playpauseiplaypausejs{
+padding-top:5vh;
+height:20vh;
+}
+
+#playpauseparentdiv{
+    text-align: center; 
+}
