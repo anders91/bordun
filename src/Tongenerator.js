@@ -33,7 +33,7 @@ export default class Tongenerator extends Component {
         this.props.notePlaying%12] + 
         this.props.noteOctave)
     return (
-      <div onClick={() => this.play(
+      <div id="playpauseparentdiv" onClick={() => this.play(
         this.noteArray[
           this.props.notePlaying%12] + 
           this.props.noteOctave)}>

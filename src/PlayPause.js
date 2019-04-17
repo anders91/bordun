@@ -29,7 +29,7 @@ class PlayPause extends React.Component {
     }
     render() {
         return (
-            <img alt="Play/pause-button" src={this.state.img} onClick={this.toggleImg}></img>
+            <img id="playpauseiplaypausejs" alt="Play/pause-button" src={this.state.img} onClick={this.toggleImg}></img>
         )
     }
 }
